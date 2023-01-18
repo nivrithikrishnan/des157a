@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>right click -> inspect -> console</h2>
+
+    <script>
+        // var length = 7; 
+        // var output = ""; 
+        // for (var i = 0; i <= length; i++){
+        //     for (var z = 0; z < i; z++){
+        //         output += "#";  
+        //     }
+        //     output += '\n'; 
+        // }
+        // console.log(output); 
+        // /*prints a triangle of base length 'length'*/
+
+        var length = 5; 
+        var output = ""; 
+        /*top half*/
+        for (var i = 0; i <= length; i++){
+            var spaces = length - i; 
+            for (var z = 0; z < spaces; z++){
+                output += " "; 
+            }
+            for (var z = 0; z < i*2+1; z++){
+                output += "#"; 
+            }
+            output += '\n'; 
+        }
+        /*bottom half*/
+        for (var i = length; i >=0; i--){
+            var spaces = length - i; 
+            for (var z = 0; z < spaces; z++){
+                output += " "; 
+            }
+            for (var z = 0; z < i*2+1; z++){
+                output += "#"; 
+            }
+            output += '\n'; 
+        }
+        console.log(output); 
+        /*prints a triangle of base length 2*'length'*/
+    </script>
+</body>
+</html>
+
