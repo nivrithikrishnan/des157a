@@ -10,6 +10,11 @@ body{
     padding: 0.75%;
 }
 
+#header-icon-container{
+    display: flex;
+    gap: 1em;
+}
+
 header{
     background-color: #23292E;
     /* background-color: rgb(134, 134, 90); */
@@ -151,3 +156,70 @@ ul li:hover a{
 }
 
 /* Icons */
+
+/*Animations*/
+/* credit: https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+/* .typewriter{
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } */
+
+/* .typewriter #line1, .typewriter #line2, .typewriter #line3{
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: .2em; 
+    border-right: .15em transparent; 
+    line-height: 2em;
+}
+
+.typewriter #line1{
+    animation: type 3s steps(40, end);
+}
+
+.typewriter #line2{
+    animation-delay: 13s;
+    animation: type 10s steps(40, end);
+}
+
+.typewriter #line3{
+    transition-delay: 8s;
+    animation: type 15s steps(40, end), type-blink .5s step-end infinite;
+}
+
+@keyframes type {
+    from { 
+        border-right: .15em solid #9F9F9F; 
+        width: 0; 
+    } to { 
+        width: 50%;
+    } 
+    
+    200% {
+        opacity: 0;
+    }
+  }
+  
+  @keyframes type-blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #9F9F9F; 
+    }
+  } */
