@@ -1,4 +1,4 @@
-/*Containers*/
+/* Containers */
 body{
     background-color: #202020;
     margin: 5%; 
@@ -24,6 +24,8 @@ main{
     border-radius: 10px;
 }
 
+/* Navigation */
+/* container containing tabs */
 nav{
     background-color: #23292E;
     color: #FFFFFF;
@@ -35,16 +37,9 @@ nav > ul{
     justify-content: left;
 }
 
+/* individual tabs */
 nav ul li{
-    margin-right: 10%;
-    padding: 1%;
-}
-
-#content{
-    background-color: #F1F1F1;
-    border-radius: 0 0 10px 10px;
-
-    padding: 1.5%;
+    margin-right: 1%;
 }
 
 /* removes styling from nav menu items */
@@ -57,7 +52,14 @@ nav ul li button {
     color: inherit; 
 }
 
-/*Text*/ 
+#content{
+    background-color: #F1F1F1;
+    border-radius: 0 0 10px 10px;
+
+    padding: 1.5%;
+}
+
+/* Text */ 
 body{
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
@@ -72,8 +74,19 @@ h2{
     color: #23292E;
 }
 
+h3{
+    font-size: 1em;
+    color: #23292E;
+}
+
+/* Navigation */
 nav ul li {
     font-size: 1.5em;
+    width: 100%;
+}
+
+.tab-labels {
+    padding: 1.5% 5% 1% 1.5%;
 }
 
 .tab-inactive {
@@ -84,31 +97,57 @@ nav ul li {
 .tab-active{
     color: #23292E;
     background-color: #F1F1F1;
-    border-radius: 10px 10px 0 0;
+    text-align: left;
+    border-radius: 10px 10px 0 0; 
 }
 
+/* Default List Styling */ 
 ul{
     list-style-type: none;
     padding: 0; /* removes right indentation from menu items */
     margin: 0;
 }
 
+/* Assignments */
 ul li a{
-    /* width: 85%; */
-    margin: 1% 1% 1% 0%; 
-    padding: 0.5% 1.5%;
-    border-radius: 10px;
-    background: #D9D9D9;
-
+    font-size: 1.25em;
     text-decoration: none;
-    line-height: 3em;
     color: #23292E;
 }
 
 ul li:hover a{
     text-decoration: none;
-    background:#501964;
     color: #FFFFFF;
 }
 
-/*Icons*/
+.item-content{
+    margin: 1% 1% 1% 0%; 
+    padding: 0.5% 1.5%;
+    border-radius: 10px;
+    background: #D9D9D9;
+
+    text-align: left;
+    line-height: 3em;
+    width: 97%;
+
+    color: #FFFFFF;
+    background-size: 400%;
+
+    background-image: linear-gradient(to left,
+                                      transparent 25%,
+                                      #501964 25%,
+                                      #501964);
+
+    background-position: 100% 0;
+    transition: all 0s ease-in;
+}
+
+.item-content:hover{
+    background-position: 0 0;
+    cursor: pointer;
+    color:#23292E;
+
+    transition: all 2s ease-in;
+}
+
+/* Icons */

@@ -1,6 +1,8 @@
 let labels = document.getElementsByClassName("tab-labels");
 let tabs = document.getElementsByClassName("tab-content");
 
+document.getElementById("tab-se").classList.add('tab-active');
+
 function switchtab(label, name){
     for (var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "none";
