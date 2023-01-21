@@ -16,16 +16,21 @@
 </head>
 <body>
     <div id="header-top">
-        <div id="header-icon-container">
-            <img src="images/x.png" alt="Close" width="20" height="20">
-            <img src="images/-.png" alt="Minimize" width="20" height="20">
-            <img src="images/+.png" alt="Maximize" width="20" height="20">
+        <div id="header-icon-container" onmouseover="showIcons()" onmouseleave="hideIcons()">
+            <img class="icons" src="images/close.png" alt="Close" width="20" height="20">
+            <img class="icons" src="images/min.png" alt="Minimize" width="20" height="20">
+            <img class="icons" src="images/max.png" alt="Maximize" width="20" height="20">
+            <img id="icon-close" class="icons-active" src="images/close-active.png" alt="Close" width="20" height="20">
+            <img id="icon-min" class="icons-active" onclick="headermin()" src="images/min-active.png" alt="Minimize" width="20" height="20">
+            <img id="icon-max" class="icons-active" onclick="headermax()"src="images/max-active.png" alt="Maximize" width="20" height="20">
         </div>
     </div>
-    <header class="typewriter">
-        <h1 id="line1">Nivrithi Krishnan</h1>
-        <h1 id="line2">DES 157A Winter 2023</h1>
-        <h1 id="line3">Interactive Media II</h1>
+    <header>
+        <div id="theheader" class="typewriter">
+            <h1 id="line1">Nivrithi Krishnan</h1>
+            <h1 id="line2">DES 157A Winter 2023</h1>
+            <h1 id="line3">Interactive Media II</h1>
+        </div>
     </header>
     <main>
         <nav>
@@ -38,6 +43,9 @@
         <div id="content">
             <div class = "tab-content" id="container-se" style="display:block">
                 <h2>Studios</h2>
+                <ul>
+                    <li class="item-content"><a href="#">Placeholder</a></li>
+                </ul>
                 <h2>Experiments</h2>
                 <h3>*note: for now please click on the assignment TEXT to see the assignment. working on fixing that...</h3>
                 <ul>

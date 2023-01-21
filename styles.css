@@ -91,7 +91,7 @@ nav ul li {
 }
 
 .tab-labels {
-    padding: 1.5% 5% 1% 1.5%;
+    padding: 3% 5% 4% 3%;
 }
 
 .tab-inactive {
@@ -156,6 +156,12 @@ ul li:hover a{
 }
 
 /* Icons */
+.icons{
+    display: block;
+}
+.icons-active{
+    display: none;
+}
 
 /*Animations*/
 /* credit: https://css-tricks.com/snippets/css/typewriter-effect/ */
