@@ -64,6 +64,11 @@ nav ul li button {
     padding: 1.5%;
 }
 
+footer{
+    padding-top: 1%;
+    text-align: center;
+}
+
 /* Text */ 
 body{
     font-family: 'Source Code Pro', monospace;
@@ -77,6 +82,10 @@ body{
 h2{
     font-weight: 600;
     color: #23292E;
+}
+
+h2:nth-child(3){
+    padding-top: 2.5%;
 }
 
 h3{
