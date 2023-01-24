@@ -172,19 +172,29 @@ ul li:hover a{
     display: none;
 }
 
-/*Animations*/
-/* credit: https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* Mobile View, individual files*/
+@media only screen and (max-width: 1210px) {
+    #content{
+        display: flex;
+    }
+    #container-rd, #container-final {
+      display: block;
+    }
+}
 
-/* .typewriter{
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+/*Animations*/
+
+.typewriter{
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
 }
 
 @keyframes typing {
-    from {
-      width: 0
+    0% {
+        width:0;
+    }
+    1% {
+        opacity: 1;
     }
   }
       
@@ -192,31 +202,51 @@ ul li:hover a{
     50% {
       border-color: transparent
     }
+  } 
+
+  /* @keyframes colorchange {
+    /* 0% {
+        color:#23292E;
+    }
+    100% {
+        color:#23292E;
+    } 
+
+    0% {
+        color:white;
+    }
+    50% {
+        color:#23292E;
+    }
+    75% {
+        color:#23292E;
+    }
   } */
 
-/* .typewriter #line1, .typewriter #line2, .typewriter #line3{
+.typewriter #line1, .typewriter #line2, .typewriter #line3{
     overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0; 
+    white-space: nowrap;  
     letter-spacing: .2em; 
     border-right: .15em transparent; 
     line-height: 2em;
+
+    /* opacity: 0; */
 }
 
 .typewriter #line1{
-    animation: type 3s steps(40, end);
+    opacity: 1;
+    animation: type 4s steps(40, end), type-blink .5s step-end infinite;
 }
 
 .typewriter #line2{
-    animation-delay: 13s;
-    animation: type 10s steps(40, end);
+    animation: type 4s steps(40, end) 2s, type-blink .5s step-end infinite;
 }
 
 .typewriter #line3{
-    transition-delay: 8s;
-    animation: type 15s steps(40, end), type-blink .5s step-end infinite;
+    animation: type 4s steps(40, end) 4s, type-blink .5s step-end infinite;
 }
 
+/* cursor */
 @keyframes type {
     from { 
         border-right: .15em solid #9F9F9F; 
@@ -237,4 +267,4 @@ ul li:hover a{
     50% { 
         border-color: #9F9F9F; 
     }
-  } */
+  }
