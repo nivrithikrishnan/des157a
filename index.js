@@ -1,19 +1,11 @@
 var wwidth = window.innerWidth; 
-var mobile = (wwidth < 1220) ? true : false; 
+var mobile = (wwidth <= 1220) ? true : false; 
 let labels = document.getElementsByClassName("tab-labels");
 let tabs = document.getElementsByClassName("tab-content");
 
 
+/* forces a reload on the page if the window is resized */
 window.addEventListener('resize', changeLayout);
-
-function debounce(func){
-    var timer;
-    return function(event){
-      if(timer) clearTimeout(timer);
-      timer = setTimeout(func,100,event);
-    };
-  }
-
 function changeLayout(){
     wwidth = window.innerWidth; 
     console.log(wwidth, mobile);
@@ -41,6 +33,11 @@ if (wwidth > 1220) {
         labels[i].classList.add('tab-inactive'); 
         labels[i].classList.remove('tab-active'); 
     }
+
+    var mediaTabs = document.getElementsByClassName("mediaTabs");
+    for (var i = 0; i < mediaTabs.length; i++){
+        mediaTabs[i].style.display = "none";
+    }
     
     document.getElementById("tab-se").classList.add('tab-active');
     document.getElementById('container-se').style.display = "block"; 
@@ -64,12 +61,22 @@ if (wwidth > 1220) {
     /* displays all content */
     for (var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "block";
-        labels[i].classList.add('tab-active'); 
-        labels[i].classList.remove('tab-inactive'); 
     }
 
-    /* adds necessary css to tabs */
+    /* removes tabs from the content of the page */
+    var mediaTabs = document.getElementsByClassName("mediaTabs");
+    for (var i = 0; i < mediaTabs.length; i++){
+        mediaTabs[i].style.display = "block";
+        mediaTabs[i].classList.remove('tab-content'); 
+        mediaTabs[i].classList.add('tab-labels'); 
+        mediaTabs[i].classList.add('tab-active'); 
+    }
 
+    for (var i = 0; i < tabs.length; i++){
+        labels[i].classList.remove('tab-content'); 
+        labels[i].classList.add('tab-labels'); 
+        labels[i].classList.add('tab-active'); 
+    }
 
     /* hides navigation */
     document.getElementById("nav").style.display = "none";
