@@ -140,17 +140,6 @@ ul{
 }
 
 /* Assignments */
-ul li a{
-    font-size: 1.25em;
-    text-decoration: none;
-    color: #23292E;
-}
-
-ul li:hover a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .item-content{
     margin: 1% 1% 1% 0%; 
     padding: 0.5% 1.5%;
@@ -161,7 +150,6 @@ ul li:hover a{
     line-height: 3em;
     width: 97%;
 
-    color: #FFFFFF;
     background-size: 400%;
 
     background-image: linear-gradient(to left,
@@ -170,13 +158,24 @@ ul li:hover a{
                                       #501964);
 
     background-position: 100% 0;
-    transition: all 0s ease-in;
+    transition: 0s ease-in;
 }
 
+.item-content a:link, a:visited{
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #23292E;
+}
+
+ul a:hover li{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* controls purple transition */
 .item-content:hover{
     background-position: 0 0;
     cursor: pointer;
-    color:#23292E;
 
     transition: all 2s ease-in;
 }

@@ -1,9 +1,37 @@
-var wwidth = window.innerWidth;
+var wwidth = window.innerWidth; 
+var mobile = (wwidth < 1220) ? true : false; 
 let labels = document.getElementsByClassName("tab-labels");
 let tabs = document.getElementsByClassName("tab-content");
 
+
+window.addEventListener('resize', changeLayout);
+
+function debounce(func){
+    var timer;
+    return function(event){
+      if(timer) clearTimeout(timer);
+      timer = setTimeout(func,100,event);
+    };
+  }
+
+function changeLayout(){
+    wwidth = window.innerWidth; 
+    console.log(wwidth, mobile);
+    if (wwidth> 1220 && mobile == true){
+        console.log("desktop view!"); 
+        mobile = false; 
+        location.reload(); 
+    }
+    
+    if (wwidth < 1220 && mobile == false){
+        console.log("mobile view!"); 
+        mobile = true; 
+        location.reload(); 
+    }
+}
+
+
 if (wwidth > 1220) {
-    console.log("mobile view!"); 
     /* Resets CSS Classes for Desktop View */
     /* shows navigation */
     document.getElementById("nav").style.display = "flexbox";
@@ -38,8 +66,6 @@ if (wwidth > 1220) {
         tabs[i].style.display = "block";
         labels[i].classList.add('tab-active'); 
         labels[i].classList.remove('tab-inactive'); 
-
-        console.log(tabs[i].style.display, labels[i].classList);
     }
 
     /* adds necessary css to tabs */
