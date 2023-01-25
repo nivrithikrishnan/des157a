@@ -2,8 +2,12 @@ var wwidth = window.innerWidth;
 let labels = document.getElementsByClassName("tab-labels");
 let tabs = document.getElementsByClassName("tab-content");
 
-if (wwidth > 1210) {
+if (wwidth > 1220) {
+    console.log("mobile view!"); 
     /* Resets CSS Classes for Desktop View */
+    /* shows navigation */
+    document.getElementById("nav").style.display = "flexbox";
+
     for (var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "none";
         labels[i].classList.add('tab-inactive'); 
@@ -29,7 +33,7 @@ if (wwidth > 1210) {
     }
 } else {
     /* Resets CSS Classes for Mobile View */
-    document.getElementById(nav).style.display = "flex";
+    /* displays all content */
     for (var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "block";
         labels[i].classList.add('tab-active'); 
@@ -38,6 +42,14 @@ if (wwidth > 1210) {
         console.log(tabs[i].style.display, labels[i].classList);
     }
 
+    /* adds necessary css to tabs */
+
+
+    /* hides navigation */
+    document.getElementById("nav").style.display = "none";
+
+    /* deactivates the switch tab function */
+    function switchtab(label, name){ console.log("in here!")};
 }
 
 /* Header Animations */

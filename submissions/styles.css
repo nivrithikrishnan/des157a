@@ -17,7 +17,6 @@ body{
 
 header{
     background-color: #23292E;
-    /* background-color: rgb(134, 134, 90); */
     border-radius: 0 0 10px 10px;
     padding: 1% 3%; 
 }
@@ -192,17 +191,6 @@ ul li:hover a{
 
 a:hover, .mail:hover{
     text-decoration: underline;
-}
-
-/* Mobile View, individual files*/
-@media only screen and (max-width: 1210px) {
-    #content{
-        display: flex;
-        flex-direction: column;
-    }
-    #container-rd, #container-final {
-      display: block;
-    }
 }
 
 /*Animations*/

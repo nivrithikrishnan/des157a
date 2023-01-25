@@ -7,7 +7,8 @@
     <title>Nivrithi Krishnan's Portal Page</title>
     <!--/ /-------- stylesheets --------/ /-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="mobile-styles.css" rel="stylesheet" media="screen and (max-width:1220px)">
+    <link href="styles.css" rel="stylesheet" media="screen and (min-width:1220px)">
     <script defer src="../des157a/index.js"></script>
     <!--/ /-------- fonts --------/ /-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
         </div>
     </header>
     <main>
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><button class="tab-labels" id = "tab-se" onclick="switchtab('tab-se', 'container-se')">Studios & Experiments</button></li>
                 <li><button class="tab-labels" id = "tab-rd" onclick="switchtab('tab-rd','container-rd')">Research & Development</button></li>
@@ -50,7 +51,7 @@
                     <li class="item-content"><a href="#">Every Picture</a></li>
                     <li class="item-content"><a href="#">Game On!</a></li>
                 </ul>
-                <h2>Experiments</h2>
+                <h2 class="h2-dark">Experiments</h2>
                 <!-- !!!!! making sure you can click the WHOLE container not just the text  -->
                 <ul>
                     <li class="item-content"><a href="/des157a/exp/exp1.html">Experiment 1</a></li>
