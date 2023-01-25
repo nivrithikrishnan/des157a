@@ -2,6 +2,7 @@
 body{
     background-color: #202020;
     margin: 5%; 
+    font-size: 0.75em;
 }
 
 #header-top{
@@ -28,44 +29,6 @@ main{
     border-radius: 10px;
 }
 
-/* Navigation */
-/* container containing tabs */
-main nav{
-    display: hidden;
-}
-
-nav{
-    background-color: #23292E;
-    color: #FFFFFF;
-}
-
-/* sets nav to be horizontal */
-nav > ul{
-    display: flex; 
-    flex-direction: column;
-    justify-content: left;
-}
-
-/* individual tabs */
-nav ul li{
-    margin-right: 1%;
-}
-
-/* removes styling from nav menu items */
-nav ul li button {
-    cursor: pointer;
-    margin: 0; 
-    padding: 0;
-    background: none;
-    border: none;
-    color: inherit; 
-}
-
-/*NEW CHANGES*/ 
-#content{
-
-}
-
 .tab-content{
     background-color: #F1F1F1;
     border-radius:  0 10px;
@@ -74,8 +37,6 @@ nav ul li button {
     margin: 1%;
     margin-top: 0%;
 }
-
-/* end of new changes */
 
 footer{
     padding-top: 1%;
@@ -87,7 +48,7 @@ body{
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.75em;
 
     color: #FFFFFF;
 }
@@ -102,29 +63,13 @@ h2{
     color: #23292E;
 }
 
-h2:nth-child(3){
-    padding-top: 2.5%;
-}
-
-h3{
-    font-size: 1em;
-    color: #23292E;
-}
-
-/* Navigation */
-nav ul li {
-    font-size: 1.5em;
-    width: 100%;
-}
-
-
-.tab-labels { /* CHANGED */
+.tab-labels { 
     margin-left: 1%;
     margin-bottom: 0; 
     padding: 2%;
     padding-bottom: 0;
 
-    width: 30%; 
+    width: 58%; 
 
     color: #23292E;
     background-color: #F1F1F1;
@@ -241,19 +186,6 @@ a:hover, .mail:hover{
     animation: type 3s steps(40, end) 5s, type-blink .5s step-end infinite;
 }
 
-.tab-labels { /* CHANGED */
-    margin-left: 1%;
-    margin-bottom: 0; 
-    padding: 2%;
-    padding-bottom: 0;
-
-    width: 30%; 
-
-    color: #23292E;
-    text-align: left;
-    border-radius: 10px 10px 0 0; 
-}
-
 /* cursor */
 @keyframes type {
     from { 
@@ -277,15 +209,4 @@ a:hover, .mail:hover{
     }
   }
 
-/* Mobile View*/
-@media only screen and (max-width: 1210px) {
-    body{
-        font-size: 0.75em;
-    }
-
-    .tab-labels {
-        color:  #202020;
-        width: 58%;
-    }
-}
 

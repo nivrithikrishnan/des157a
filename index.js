@@ -8,7 +8,7 @@ let tabs = document.getElementsByClassName("tab-content");
 window.addEventListener('resize', changeLayout);
 function changeLayout(){
     wwidth = window.innerWidth; 
-    console.log(wwidth, mobile);
+    // console.log(wwidth, mobile);
     if (wwidth> 1220 && mobile == true){
         console.log("desktop view!"); 
         mobile = false; 
@@ -27,18 +27,19 @@ if (wwidth > 1220) {
     /* Resets CSS Classes for Desktop View */
     /* shows navigation */
     document.getElementById("nav").style.display = "flexbox";
-
     for (var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "none";
         labels[i].classList.add('tab-inactive'); 
         labels[i].classList.remove('tab-active'); 
     }
 
-    var mediaTabs = document.getElementsByClassName("mediaTabs");
+    /* hides media tabs */
+    var mediaTabs = document.getElementsByClassName("tab-media");
     for (var i = 0; i < mediaTabs.length; i++){
         mediaTabs[i].style.display = "none";
     }
     
+    /* sets acrive tab to studios & experiments */
     document.getElementById("tab-se").classList.add('tab-active');
     document.getElementById('container-se').style.display = "block"; 
 
@@ -64,18 +65,11 @@ if (wwidth > 1220) {
     }
 
     /* removes tabs from the content of the page */
-    var mediaTabs = document.getElementsByClassName("mediaTabs");
+    var mediaTabs = document.getElementsByClassName("tab-media");
     for (var i = 0; i < mediaTabs.length; i++){
         mediaTabs[i].style.display = "block";
         mediaTabs[i].classList.remove('tab-content'); 
         mediaTabs[i].classList.add('tab-labels'); 
-        mediaTabs[i].classList.add('tab-active'); 
-    }
-
-    for (var i = 0; i < tabs.length; i++){
-        labels[i].classList.remove('tab-content'); 
-        labels[i].classList.add('tab-labels'); 
-        labels[i].classList.add('tab-active'); 
     }
 
     /* hides navigation */
