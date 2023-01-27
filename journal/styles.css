@@ -1,0 +1,27 @@
+/* Containers */
+body{
+    background-color: #202020;
+    margin: 5%; 
+}
+
+article{
+    color: #FFFFFF;
+}
+
+/* Text */ 
+body{
+    font-family: 'Source Code Pro', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+h2{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+h3{
+    font-style: italic;
+}
