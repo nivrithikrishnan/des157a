@@ -1,7 +1,7 @@
 /* Containers */
 body{
     background-color: #202020;
-    margin: 5%; 
+    margin: 10%; 
 }
 
 article{
@@ -13,15 +13,29 @@ body{
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.25em;
     color: #FFFFFF;
 }
 
 h2{
-    color: #FFFFFF;
+    color: #202020;
+    background-color: #FFFFFF;
     font-weight: 600;
+
+    max-width: fit-content;
 }
 
 h3{
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
+a:hover{
+    text-decoration: underline;
     font-style: italic;
 }
