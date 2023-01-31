@@ -9,14 +9,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
 </head>
-<body>
+<body style="transition: all 2s;">
     <h1>Experiment 2</h1>
     <br><br>
     <h1 style = "text-align:center;
-                background-color: black;
-                opacity:0.8; 
+                background-color: black; 
                 border-radius: 10px; 
-                margin:2% 37%; 
+                margin: 2% -11%; 
                 padding: 1%;">
                 
     Select a color: </h1>
@@ -36,12 +35,12 @@
 
     <script>
         const values = new Map();
-        values.set('red', "#990000");
-        values.set('blue', "#003366")
-        values.set('yellow', "#FFFF00")
-        values.set('green', "#006600")
-        values.set('orange', "#CC6600")
-        values.set('purple', "#330066")
+        values.set('red', "#EF270C");
+        values.set('blue', "#45C0D0")
+        values.set('yellow', "#FFAD22")
+        values.set('green', "#90A13C")
+        values.set('orange', "#E15F12")
+        values.set('purple', "#786DA7")
 
         var choice = colors.selectedIndex;
         console.log(choice);
@@ -49,6 +48,7 @@
         document.getElementsByTagName('select')[0].onchange = function() {
             var choice = this.value;
             var color = values.get(choice); 
+            
             document.body.style.backgroundColor = "" + values.get(choice);
             console.log(color);
         }
