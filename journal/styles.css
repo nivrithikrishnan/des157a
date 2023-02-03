@@ -1,7 +1,7 @@
 /* Containers */
 body{
     background-color: #202020;
-    margin: 10%; 
+    margin: 8% 10%; 
 }
 
 article{
@@ -38,4 +38,14 @@ a{
 a:hover{
     text-decoration: underline;
     font-style: italic;
+}
+
+/*Images*/
+img{
+
+}
+
+/* Other */
+.line{
+    margin: 5% 0%; 
 }
