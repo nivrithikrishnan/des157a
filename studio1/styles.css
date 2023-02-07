@@ -1,0 +1,45 @@
+body {
+    margin: 10%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+}
+
+#container-main{
+    margin: 5% 10%;
+    padding: 5%;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+/*Text*/
+h1{
+    color: #FFFCFC;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+h2, p{
+    color: black;
+}
+
+#text-input{
+    text-align: left;
+    text-transform: uppercase;
+
+    margin: 5% 10%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+}
+
+/*Buttons*/
+#button-next{
+    padding: 1% 4%;
+    border-radius: 20px;
+
+    justify-content: right;
+    text-align: left;
+}
