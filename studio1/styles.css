@@ -2,7 +2,8 @@ body {
     margin: 8% 20%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    /* background-color: black; */
+    transition: 8s;
+    background-color: #f9f9f9;
 }
 
 form input, form select{
@@ -10,7 +11,7 @@ form input, form select{
     margin: 2% 2%;
     padding: 0.5%;
     border-radius: 10px;
-    background-color: #EEEEEE;
+    background-color: #e4e4e4;
     border-color: transparent;
 
     font-size: 1.25em;
@@ -30,7 +31,7 @@ form label{
 #madlib{
     line-height: 2em;
     font-size: 1.75em;
-    color: #717171;
+    color: #616161;
 }
 
 /*Buttons*/
@@ -38,6 +39,7 @@ form label{
     width: auto;
     padding: 0.75% 4% 0.5% 4%;
     border-radius: 20px;
+    background-color: #e4e4e4;
 }
 
 @media only screen and (max-width: 1050px) {
