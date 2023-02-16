@@ -8,6 +8,18 @@ article{
     color: #FFFFFF;
 }
 
+.split-container{
+    display: flex;
+}
+
+.split-1{
+    width: 15%;
+}
+
+.split-2{
+    width: 85%;
+}
+
 /* Text */ 
 body{
     font-family: 'Source Code Pro', monospace;
@@ -27,6 +39,10 @@ h2{
 
 h3{
     font-style: italic;
+}
+
+figcaption{
+    font-size: 0.75em;
 }
 
 a{
