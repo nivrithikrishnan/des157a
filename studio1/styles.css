@@ -1,29 +1,72 @@
 body {
-    margin: 10%;
+    margin: 8% 20%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
+
+form input, form select{
+    width: 30%;
+    margin: 2% 2%;
+    padding: 0.5%;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    border-color: transparent;
+
+    font-size: 1.25em;
+}
+
+/*Text*/
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+form label{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#madlib{
+    line-height: 2em;
+    font-size: 1.75em;
+    color: #EEEEEE;
+}
+
+/*Buttons*/
+#submit-button{
+    width: auto;
+    padding: 0.75% 4% 0.5% 4%;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+    h1{
+        font-size: 2em;
+    }
+    
+    form label, form select, #madlib, #submit-button{
+        font-size: 1em;
+    }
+
+    form select{
+        min-width: 30%;
+    }
+
+    #submit-button{
+    }
+} 
+
+/* 
+
+#FFFCFC;
 
 #container-main{
     margin: 5% 10%;
     padding: 5%;
     border-radius: 30px;
     background-color: #FFFFFF;
-}
-
-/*Text*/
-h1{
-    color: #FFFCFC;
-}
-
-h1, h2{
-    text-transform: uppercase;
-}
-
-h2, p{
-    color: black;
-}
+} 
 
 #text-input{
     text-align: left;
@@ -35,7 +78,6 @@ h2, p{
     background-color: #EEEEEE;
 }
 
-/*Buttons*/
 #button-next{
     padding: 1% 4%;
     border-radius: 20px;
@@ -43,3 +85,4 @@ h2, p{
     justify-content: right;
     text-align: left;
 }
+*/
