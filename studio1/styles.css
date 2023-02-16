@@ -30,7 +30,7 @@ form label{
 #madlib{
     line-height: 2em;
     font-size: 1.75em;
-    color: #EEEEEE;
+    color: #717171;
 }
 
 /*Buttons*/
@@ -52,14 +52,9 @@ form label{
     form select{
         min-width: 30%;
     }
-
-    #submit-button{
-    }
 } 
 
 /* 
-
-#FFFCFC;
 
 #container-main{
     margin: 5% 10%;
