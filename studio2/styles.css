@@ -1,0 +1,62 @@
+/*Containers*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Images
+img{
+    outline: 0.1em solid transparent;
+    outline-offset:1em; 
+    filter: blur(4px) grayscale(100%);
+}
+
+img:hover {
+    outline: 0.1em solid black;
+    filter: blur(0px) grayscale(0%);
+    transition: 1.5s;
+} */
+
+/*Slideshow*/
+.slideshow {
+    margin: 20% 0%;
+    justify-content: center;
+    align-items: center;
+
+    width: 60em;
+    height: auto;
+    overflow: hidden;
+    
+    border-radius: 3px;
+    box-shadow: 3px 10px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    transition: all 1s ease;
+}
+
+ul li {
+    margin: 4%;
+}
+  
+img{
+    height: 15em;
+    width: 15em;
+    border-radius: 3px;
+    border-color: transparent;
+    filter: grayscale(100%);
+}
+
+.active {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
