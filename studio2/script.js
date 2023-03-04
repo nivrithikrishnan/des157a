@@ -6,6 +6,7 @@
     let location = 0;      //slideshow location (previous index)
     let index = 1;      //index of current image
     let direction = true;       //direction of carouself movement (true if forwards, false if backwards)
+
     const slideshow = document.querySelector("ul");      //slideshow element
     let current = document.getElementsByTagName("li")[0].firstChild;      //current element of slideshow
 
@@ -39,6 +40,11 @@
         (direction) ? location+=1 : location -=1; 
         (direction) ? index+=1 : index-=1; 
     }
+
+    /* function for pop-up */
+    current.addEventListener("click", function(e){
+        
+    }); 
 
     /* timer for running the slideshow */
     setInterval(() => {

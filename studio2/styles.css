@@ -45,10 +45,12 @@ img{
     border-radius: 3px;
     border-color: transparent;
     filter: grayscale(100%);
+    cursor:default;
 }
 
 .active {
     filter: grayscale(0%);
     transition: 0.5s;
+    cursor: pointer;
 }
 
