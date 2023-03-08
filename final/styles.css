@@ -1,23 +1,7 @@
 /* Containers */
 body{
     background-color: #202020;
-    margin: 8% 13%; 
-}
-
-article{
-    color: #FFFFFF;
-}
-
-.split-container{
-    display: flex;
-}
-
-.split-1{
-    width: 15%;
-}
-
-.split-2{
-    width: 85%;
+    margin: 8% 10%; 
 }
 
 /* Text */ 
@@ -38,21 +22,6 @@ h2{
 }
 
 h3{
-    font-style: italic;
-}
-
-figcaption{
-    font-size: 0.75em;
-}
-
-a{
-    text-decoration: none;
-    color: #FFFFFF;
-    opacity: 0.75;
-}
-
-a:hover{
-    text-decoration: underline;
     font-style: italic;
 }
 
