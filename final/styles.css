@@ -18,12 +18,19 @@ main{
     display: none;
     position: absolute;
     flex-direction: row;
-    justify-content: space-between;
     z-index: 1;
 
     background-color: white;
     border-radius: 4px;
 
+}
+
+#card-info{
+    margin: 5%;
+    width:fit-content;
+
+    font-weight: 200;
+    font-size: 1.5em;
 }
 
 /*Text*/
@@ -78,7 +85,6 @@ img{
     height: 2em;
     width: 2em;
     margin-left: 2em;
-    padding: 3%;
 }
 
 #close:hover{

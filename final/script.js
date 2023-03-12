@@ -1,3 +1,5 @@
+//moves twice
+
 (function(){
     'use strict';
     console.log('reading js'); 
@@ -5,10 +7,10 @@
     /* variable declarations */
     let location = 0;      
     let index = 1;    
-    let direction = true;       
+    let direction = true;  
+    let infoNode;      
 
-    const slideshow = document.querySelector("div ul");   
-    const slideArr = document.getElementsByTagName("li");   
+    const slideshow = document.querySelector("div ul");    
     const card = document.getElementById('card'); 
     let current = document.getElementsByTagName("li")[0].firstChild;     
 
@@ -55,6 +57,9 @@
                 var preview = element.cloneNode(true); //creates a duplicate element 
                 document.getElementById("card-img").appendChild(preview); 
 
+                infoNode = document.createTextNode(element.getAttribute('alt'))
+                document.getElementById("card-info").appendChild(infoNode);
+
                 clearInterval(start);
             } 
         });
@@ -67,9 +72,10 @@
         
         /* deletes pop-up content */
         document.getElementById("card-img").removeChild(document.getElementById("card-img").firstChild);
+        document.getElementById("card-info").removeChild(infoNode);
         
         /* timer for running the slideshow */
-        var start = setInterval(startSlideshow, 2000);
+        start = setInterval(startSlideshow, 2000);
     }); 
 
     /* timer for running the slideshow */
