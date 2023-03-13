@@ -1,0 +1,100 @@
+/*Containers*/
+body{
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+main{
+    justify-content: center;
+}
+
+#card{
+    margin: 0;
+    padding: 2%;
+    left: 30%;
+
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    z-index: 1;
+
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+#card-img img{
+    background-color: blue;
+    height: 15em;
+    width: 15em;
+}
+
+#card-info{
+    margin: 5%;
+    width: 10em;
+    font-weight: 200;
+    font-size: 1.5em;
+}
+
+/*Text*/
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+/*Slideshow*/
+#slideshow {
+    margin: 5% 0;
+    justify-content: center;
+    align-items: center;
+
+    width: 65em;
+    height: auto;
+    overflow: hidden;
+    
+    border-radius: 4px;
+    box-shadow: 3px 10px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    transition: all 1s ease;
+}
+
+ul li {
+    margin: 4%;
+}
+
+/* Images */
+img{
+    height: 15em;
+    width: 15em;
+    border-radius: 3px;
+    border-color: transparent;
+    filter: grayscale(100%);
+    cursor:default;
+}
+
+.active {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#close{
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+}
+
+#close:hover{
+    cursor: pointer;
+}
+

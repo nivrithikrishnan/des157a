@@ -14,7 +14,9 @@ main{
 
 #card{
     margin: 0;
-    padding: 5%;
+    padding: 2%;
+    left: 30%;
+
     display: none;
     position: absolute;
     flex-direction: row;
@@ -25,10 +27,15 @@ main{
 
 }
 
+#card-img img{
+    background-color: blue;
+    height: 15em;
+    width: 15em;
+}
+
 #card-info{
     margin: 5%;
-    width:fit-content;
-
+    width: 10em;
     font-weight: 200;
     font-size: 1.5em;
 }
@@ -84,7 +91,7 @@ img{
 #close{
     height: 2em;
     width: 2em;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 #close:hover{
