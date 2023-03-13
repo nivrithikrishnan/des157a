@@ -35,9 +35,20 @@ div {
     flex-direction: column;
 }
 
+footer{
+    font-size: 0.75em;
+    opacity: 0.5;
+}
+
+footer a{
+    color: #F7E5AE;
+    opacity: 0.5;
+}
+
 /* Buttons */
 button{ 
     padding: 1%;
+    margin: 0 1%;
     border-radius: 10px;
     border-color: transparent;
 
@@ -63,6 +74,10 @@ button:hover, #help:hover, #close:hover{
 #close{
     align-self: center;
     margin-top: -34%;
+}
+
+.dice{
+    padding: 1%;
 }
 
 /* Other */

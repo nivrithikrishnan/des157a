@@ -8,9 +8,12 @@
     const score = document.getElementById('score'); 
     const actionArea = document.getElementById('actions'); 
 
+    const rollSound = new Audio('media/dice-roll.wav');
+    const winSound = new Audio('media/win.mp3');
+
     const gameData = {
-        dice: ['./images/1die.jpg', './images/2die.jpg', './images/3die.jpg', 
-               './images/4die.jpg', './images/5die.jpg', './images/6die.jpg'],
+        dice: ['./images/1die.png', './images/2die.png', './images/3die.png', 
+               './images/4die.png', './images/5die.png', './images/6die.png'],
         players: ['player 1', 'player 2'],
         score: [0, 0],
         roll1: 0,
@@ -58,8 +61,8 @@
         gameData.roll1 = Math.floor(Math.random() * 6) + 1; 
         gameData.roll2 = Math.floor(Math.random() * 6) + 1; 
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">
-                           <img src="${gameData.dice[gameData.roll2-1]}">`;
+        game.innerHTML += `<img class="dice" src="${gameData.dice[gameData.roll1-1]}">
+                           <img class="dice" src="${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2; 
 
         //two 1s
@@ -95,8 +98,11 @@
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn(); 
             });
+            rollSound.play();
         }
+        showCurrentScore();
         checkWinningCondition();
+        rollSound.play();
     }
 
     function checkWinningCondition(){
@@ -107,6 +113,7 @@
 
             actionArea.innerHTML = ''; 
             document.getElementById('quit').innerHTML = "Start a New Game?";
+            winSound.play();
         //show current score
         } else {
             showCurrentScore();
