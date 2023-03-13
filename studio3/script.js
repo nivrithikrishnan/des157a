@@ -26,7 +26,7 @@
         console.log(gameData.index);
 
         gameControl.innerHTML = `<h2>The Game Has Started</h2>`;
-        gameControl.innerHTML = `<button id="quit">Want To Quit?</button>`;
+        gameControl.innerHTML = `<button class="red" id="quit">Quit</button>`;
 
         document.getElementById('quit').addEventListener("click", function(){
             location.reload();
@@ -34,6 +34,14 @@
 
         console.log("setup the turn!"); 
         setUpTurn();
+    });
+
+    document.getElementById("help").addEventListener("click", function(){
+        document.getElementById("instructions").style.display = "flex";
+    });
+
+    document.getElementById("close").addEventListener("click", function(){
+        document.getElementById("instructions").style.display = "none";
     });
 
     function setUpTurn(){

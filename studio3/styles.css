@@ -1,0 +1,78 @@
+/* Containers */
+body {
+    margin: 8% 10%;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #411D14;
+    color: #F7E5AE;
+
+    font-family: 'Charis SIL', serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+div {
+    padding: 2%;
+}
+
+#instructions{
+    display: none;
+    position:relative;
+    flex-direction: row;
+    border-radius: 10px;
+
+    margin: auto;
+    margin-top: 5%;
+    width:60%;
+
+    background-color: rgb(123,171,159);
+    color: white;
+}
+
+#itext{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Buttons */
+button{ 
+    padding: 1%;
+    border-radius: 10px;
+    border-color: transparent;
+
+    background: #D2A734;
+    color: #411D14;
+}
+
+button:hover, #help:hover, #close:hover{ 
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.red{ 
+    background: #C94D2B;
+    color: #F7E5AE;
+}
+
+/* Icons */
+#help{
+    margin-left: 94%;
+}
+
+#close{
+    align-self: center;
+    margin-top: -34%;
+}
+
+/* Other */
+/* #gamecontrol, #score {
+    background-color: rgb(0, 0, 77);
+}
+
+#game {
+    background-color:rgb(0, 45, 41);
+}
+#actions {
+    background-color: rgb(0, 32, 46);
+} */
